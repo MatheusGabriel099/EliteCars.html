@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+/*Estilizando o header*/
+.cabecalho {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    color: #d4b546;
+}
+
+/*Estilizando a logo*/
+.img-header {
+    width: 150px;
+}
+
+
+.ul-lista {
+    list-style: none;
+}
+
+
+.ul-lista {
+    display: flex;
+    gap: 15px;
+}
+
+
+.ul-lista li a {
+    text-decoration: none;
+    color: #d4b546;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Quintessential;
+}
+
+/*inicio da section 01*/
+.img-section-01 {
+     width: 310px;
+     margin-left: 40px;
+}
+
+.section-01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: black;
+    padding: 40px;
+    gap: 60px;
+}
+
+.div-02 p {
+    color: #d4b546;
+    font-size: 30px;
+    font-family: Quintessential;
+    margin-left: 40px;
+    text-align: center;
+}
+
+span {
+    color: chocolate;
+    font-size: 35px;
+}
