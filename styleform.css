@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+.cabecalho {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: #d4b546;
+}
+
+.img-header {
+   width: 150px; 
+}
