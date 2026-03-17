@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
+* {
+    scroll-behavior: smooth;
+    font-family: Quintessential;
+    list-style: none;
+}
+
 /*Estilizando o header*/
 .cabecalho {
     background-color: black;
@@ -8,6 +14,14 @@
     justify-content: space-evenly;
     padding: 25px;
     color: #d4b546;
+    position: sticky;
+    /*Faz com que o elemento fique "grudado" na tela quando o usuário rolar a página*/
+    top: 0;
+    /*Define que o elemento ficará preso no topo da tela (0px de distância do topo*/
+    left: 0;
+    /*Define o alinhamento à esquerda da página, mantendo 0px de distância*/
+    z-index: 1;
+    /*Controla a sobreposição do elemento sobre outros elementos da página*/
 }
 
 /*Estilizando a logo*/
@@ -35,12 +49,17 @@
     font-weight: 800;
     font-family: Quintessential;
 }
+
+.ul-lista li a:hover {
+    color: blueviolet;
+}
+
 /*Fim do cabeçario*/
 
 /*inicio da section 01*/
 .img-section-01 {
-     width: 310px;
-     margin-left: 40px;
+    width: 310px;
+    margin-left: 40px;
 }
 
 .section-01 {
@@ -81,7 +100,7 @@ span {
     font-size: 45px;
 }
 
-.div-icon{
+.div-icon {
     font-size: 40px;
 }
 
@@ -89,6 +108,7 @@ span {
     text-align: center;
     font-size: 20px;
 }
+
 /*Fim section 02*/
 
 /*Inicio section 03*/
@@ -104,14 +124,21 @@ span {
     justify-content: center;
 }
 
-.button-sec-03 {
+.section-03 a {
     padding: 8px;
     background-color: black;
     color: #d4b546;
     font-family: Quintessential;
     text-transform: uppercase;
     border: none;
+    text-decoration: none;
 }
+
+.section-03 a:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
 /*Fim section 03*/
 
 /*Inicio section 04*/
@@ -122,6 +149,7 @@ span {
     background-color: grey;
     padding: 15px;
     text-align: center;
+    box-shadow: 10px 10px 10px blueviolet;
 }
 
 .section-04 {
@@ -133,6 +161,12 @@ span {
     color: black;
     background-color: black;
     font-family: Quintessential;
+}
+
+.section-04 div:hover {
+    box-shadow: 15px 15px 15px blueviolet;
+    padding: 25px;
+    width: 300px;
 }
 
 .caixa-02 {
@@ -158,13 +192,14 @@ span {
 }
 
 /*Estilização dos icons*/
-.fa-star, .fa-star-half {
+.fa-star,
+.fa-star-half {
     font-size: 25px;
     color: goldenrod;
 }
 
 /*Estilizando caixa 03 - icon*/
-.fa-comment{
+.fa-comment {
     font-size: 80px;
     margin-top: 30px;
     color: black;
@@ -188,7 +223,9 @@ footer {
     flex-direction: column;
 }
 
-footer .fa-instagram, .fa-x-twitter, .fa-whatsapp {
+footer .fa-instagram,
+.fa-x-twitter,
+.fa-whatsapp {
     color: #d4b546;
     font-size: 35px;
     margin-top: 15px;
