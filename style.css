@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
+/*Estilização Universal*/
 * {
     scroll-behavior: smooth;
+    /*Transição universal no Scroll de rolagem*/
     font-family: Quintessential;
+    /*Familia de fonyr universal*/
     list-style: none;
+    /*Removendo estilo de lista UNIVERSAL*/
+    margin: 0;
+    /*Removendo os espaçamentos laterais e superiores*/
+    padding: 0;
+    /*Desabilitando preenchimento aplicado por padrão*/
 }
 
 /*Estilizando o header*/
@@ -23,6 +31,28 @@
     z-index: 1;
     /*Controla a sobreposição do elemento sobre outros elementos da página*/
 }
+
+/*alterando o tamanho do icon whatsapp*/
+.whatsapp img {
+    width: 50px;
+    /*largura do icon*/
+}
+
+/*div que guarda o icon whatsapp*/
+.whatsapp {
+    position: fixed;
+    /*posicionamento fixo*/
+    right: 25px;
+    /*posicionamento à esquerda (25px)*/
+    bottom: 25px;
+    /*posicionamento a 25px do botton*/
+}
+
+.whatsapp img:hover {
+    width: 60px;
+    transition: 0.8s;
+}
+
 
 /*Estilizando a logo*/
 .img-header {
@@ -60,6 +90,15 @@
 .img-section-01 {
     width: 310px;
     margin-left: 40px;
+}
+
+.img-section-01:hover {
+    box-shadow: 5px 5px 15px blueviolet;
+}
+
+.img-section-01:hover {
+    box-shadow: 10px 10px 20px blueviolet;
+    transition: 0.8s;
 }
 
 .section-01 {
@@ -135,8 +174,14 @@ span {
 }
 
 .section-03 a:hover {
-    background-color: blueviolet;
-    color: black;
+    background-color: black;
+    color: #d4b546;
+    box-shadow: 10px 10px 20px blueviolet;
+}
+
+.section-03 a:hover {
+    box-shadow: 15px 15px 30px blueviolet;
+    transition: 0.8s;
 }
 
 /*Fim section 03*/
@@ -149,7 +194,7 @@ span {
     background-color: grey;
     padding: 15px;
     text-align: center;
-    box-shadow: 10px 10px 10px blueviolet;
+    box-shadow: 10px 10px 20px blueviolet;
 }
 
 .section-04 {
@@ -164,9 +209,14 @@ span {
 }
 
 .section-04 div:hover {
-    box-shadow: 15px 15px 15px blueviolet;
+    box-shadow: 15px 15px 25px blueviolet;
     padding: 25px;
     width: 300px;
+}
+
+.section-04 div:hover {
+    box-shadow: 20px 20px 30px blueviolet;
+    transition: 1s;
 }
 
 .caixa-02 {
